@@ -58,7 +58,7 @@ class WeLoveCustomers_Connector_Block_Checkout_Onepage_Success_Tag extends Mage_
 
     }
     /**
-     * calculation of the hash as per follow :  md5(glue . name . email . mobile . amount . coupons . timestamp . purchaseId).
+     * calculation of the hash as per follow: md5(glue . name . email . mobile . amount . coupons . timestamp . purchaseId).
      * @return string
      */
     public function getHash(){

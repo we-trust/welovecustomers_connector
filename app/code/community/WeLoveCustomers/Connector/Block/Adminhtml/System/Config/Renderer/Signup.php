@@ -14,7 +14,7 @@ class WeLoveCustomers_Connector_Block_Adminhtml_System_Config_Renderer_Signup ex
 
     protected function _getElementHtml(Varien_Data_Form_Element_Abstract $element)
     {
-        return $this->__("Please create your WeLoveCustomers account using this link : %s", "<a href=\"" . $this->getLinkUrl() . "\" target=\"_blank\"> ". $this->getLabel() ."</a>");
+        return $this->__("Please create your account using this link: %s", "<a href=\"" . $this->getLinkUrl() . "\" target=\"_blank\"> ". $this->getLabel() ."</a>");
     }
 
 

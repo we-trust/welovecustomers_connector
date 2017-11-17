@@ -31,7 +31,7 @@ class WeLoveCustomers_Connector_Block_Adminhtml_System_Config_Renderer_VersionNu
             }
         }
 
-        return $this->__('%s (lastest version available : %s)', $helper->getExtensionVersion(), $version);
+        return $this->__('%s (latest  version available: %s)', $helper->getExtensionVersion(), $version);
     }
 
 }
