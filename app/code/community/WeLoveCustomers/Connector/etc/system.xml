@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <wlc_connector translate="label" module="wlc_connector">
+            <label>WeLoveCustomers</label>
+            <sort_order>121</sort_order>
+        </wlc_connector>
+    </tabs>
+    <sections>
+        <wlc_connector translate="label" module="wlc_connector">
+            <class>separator-top</class>
+            <label>WeLoveCustomers</label>
+            <tab>wlc_connector</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <setup translate="label comment">
+                    <expanded>1</expanded>
+                    <label>Setup</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>We Love Customers provides an easy-to-use and powerful referral program platform for VSB, SMB and e-merchants.</comment>
+                    <fields>
+                        <sign_up translate="button_label">
+                            <label></label>
+                            <frontend_model>wlc_connector/adminhtml_system_config_renderer_signup</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sign_up>
+                        <version_number translate="button_label">
+                            <label>Module version</label>
+                            <frontend_model>wlc_connector/adminhtml_system_config_renderer_versionNumber</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </version_number>
+                    </fields>
+                </setup>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>1</expanded>
+                    <comment>
+                        <![CDATA[
+                            <style>
+                                #row_wlc_connector_setup_sign_up {
+                                    position:relative;
+                                }
+
+                                #row_wlc_connector_setup_sign_up > .value{
+                                    width:500px;
+                                    position: absolute;
+                                    margin-left: -205px;
+                                }
+
+                                #row_wlc_connector_setup_sign_up > .scope-label,
+                                #row_wlc_connector_setup_version_number > .scope-label
+                                {
+                                    opacity: 0;
+                                }
+                            </style>
+                        ]]>
+                    </comment>
+                    <fields>
+                        <api_key translate="label">
+                            <label>API key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </api_key>
+                        <api_glue translate="label">
+                            <label>API Glue</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </api_glue>
+                    </fields>
+                </general>
+            </groups>
+        </wlc_connector>
+    </sections>
+</config>

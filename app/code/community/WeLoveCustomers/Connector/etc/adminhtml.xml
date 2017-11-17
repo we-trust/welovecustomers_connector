@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <wlc_connector translate="title" module="wlc_connector">
+            <title>WeLoveCustomers</title>
+            <sort_order>81</sort_order>
+            <children>
+                <configuration translate="title" module="wlc_connector">
+                    <title>Configuration</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/system_config/edit/section/wlc_connector</action>
+                </configuration>
+                <create_account translate="title" module="wlc_connector">
+                    <title>Create Account</title>
+                    <sort_order>2</sort_order>
+                    <action>adminhtml/wlc_connector/createAccount</action>
+                </create_account>
+            </children>
+        </wlc_connector>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <wlc_connector>
+                        <title>WeLoveCustomers</title>
+                        <sort_order>10</sort_order>
+                        <setting>
+                            <configuration>
+                                <title>Configuration</title>
+                                <sort_order>0</sort_order>
+                            </configuration>
+                            <create_account>
+                                <title>Create Account</title>
+                                <sort_order>0</sort_order>
+                            </create_account>
+                        </setting>
+                    </wlc_connector>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <wlc_connector>
+                                        <title>WeLoveCustomers Connector</title>
+                                        <sort_order>100</sort_order>
+                                    </wlc_connector>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

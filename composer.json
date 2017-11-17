@@ -1,0 +1,11 @@
+{
+    "name": "we-trust/welovecustomers_connector",
+    "type": "magento-module",
+    "description": "WeLoveCustomers Connector",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel JADEAU"
+        }
+    ]
+}

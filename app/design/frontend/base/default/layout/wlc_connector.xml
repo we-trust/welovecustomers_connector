@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_onepage_success translate="label">
+        <reference name="before_body_end">
+            <block type="wlc_connector/checkout_onepage_success_tag" name="checkout.success.tag" template="wlc_connector/checkout/onepage/success/tag.phtml"/>
+        </reference>
+    </checkout_onepage_success>
+</layout>

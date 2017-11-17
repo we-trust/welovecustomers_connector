@@ -1,0 +1,13 @@
+# app/code
+app/code/community/WeLoveCustomers/Connector                        app/code/community/WeLoveCustomers/Connector
+
+# app/design
+app/design/frontend/base/default/layout/wlc_connector.xml           app/design/frontend/base/default/layout/wlc_connector.xml
+app/design/frontend/base/default/template/wlc_connector
+
+#app/etc/
+app/etc/modules/WeLoveCustomers_Connector.xml                       app/etc/modules/WeLoveCustomers_Connector.xml
+
+#app/locale
+app/locale/fr_CA/WeLoveCustomers_Connector.csv                      app/locale/fr_CA/WeLoveCustomers_Connector.csv
+app/locale/fr_FR/WeLoveCustomers_Connector.csv                      app/locale/fr_FR/WeLoveCustomers_Connector.csv

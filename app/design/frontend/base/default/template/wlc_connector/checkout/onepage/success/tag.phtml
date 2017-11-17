@@ -1,0 +1,28 @@
+<?php /* @var $this WeLoveCustomers_Connector_Block_Checkout_Onepage_Success_Tag */ ?>
+<?php $order = $this->getOrder();?>
+<?php if($order && $this->getApiKey() && $this->getApiGlue()) : ?>
+    <!--​ ​Begin​ ​WLC​ ​Call​ ​-->
+    <ins class="wlc-purchase"
+        customer-key="<?php echo $this->getApiKey()?>"
+        data-name="<?php echo $order->getCustomerName()?>"
+        data-email="<?php echo $order->getCustomerEmail() ?>"
+        data-mobile=""
+        data-amount="<?php echo $this->getSubtotal()?>"
+        data-coupons="<?php echo $order->getCouponCode() ?>"
+        data-timestamp="<?php echo strtotime($order->getCreatedAtStoreDate())?>"
+        data-purchase-id="<?php echo $order->getIncrementId() ?>"
+        data-hash="<?php echo $this->getHash()?>"
+        data-lang="<?php echo $this->getLang()?>"
+       data-currency="<?php echo $order->getOrderCurrencyCode()?>" ></ins>
+    <script>
+        (function(l,o,v,e){
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');
+            r.async=1;
+            r.src=v+e;
+            a.appendChild(r);
+        })(window,document,'//dj8z0bra0q3sp.cloudfront.net','/js/referral/referral-purchase.js'
+        );
+    </script>
+    <!--​ ​End​ ​WLC​ ​Call​ ​-->
+<?php endif;?>
